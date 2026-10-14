@@ -992,7 +992,8 @@ section {
   opacity: 0.4;
 }
 
-.project-card:first-child {
+.project-card:first-child,
+.project-card-wide {
   grid-column: span 2;
 }
 
@@ -1851,6 +1852,10 @@ footer p {
   transition-delay: 0.25s;
 }
 
+.projects-grid .reveal-item:nth-child(6) {
+  transition-delay: 0.3s;
+}
+
 /* Stagger animation delays for services */
 .services-grid .reveal-item:nth-child(1) {
   transition-delay: 0s;
@@ -1891,6 +1896,14 @@ footer p {
 
 .tech-grid .reveal-item:nth-child(6) {
   transition-delay: 0.4s;
+}
+
+.tech-grid .reveal-item:nth-child(7) {
+  transition-delay: 0.48s;
+}
+
+.tech-grid .reveal-item:nth-child(8) {
+  transition-delay: 0.56s;
 }
 
 /* ===========================================
@@ -1986,6 +1999,7 @@ footer p {
   }
 
   .project-card:first-child,
+  .project-card-wide,
   .service-card:first-child {
     grid-column: span 1;
   }
@@ -2055,7 +2069,8 @@ footer p {
     grid-template-columns: 1fr;
   }
 
-  .project-card:first-child {
+  .project-card:first-child,
+  .project-card-wide {
     grid-column: span 1;
   }
 

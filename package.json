@@ -2,7 +2,7 @@
   "private": true,
   "name": "habibur-rahman-portfolio",
   "version": "1.0.0",
-  "description": "Portfolio of Habibur Rahman — full-stack developer based in Dhaka, Bangladesh.",
+  "description": "Portfolio of Habibur Rahman — AI & full-stack developer based in Dhaka, Bangladesh.",
   "type": "module",
   "engines": {
     "node": ">=20"

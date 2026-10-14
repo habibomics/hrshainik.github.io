@@ -12,7 +12,7 @@
  *   ?kicker=…   Small uppercase label above the title (max 30 chars)
  *   ?domain=…   Footer URL string (max 40 chars)
  *
- * Example: /api/og?title=Habibur%20Rahman&role=Full-Stack%20Developer
+ * Example: /api/og?title=Habibur%20Rahman&role=AI%20%26%20Full-Stack%20Developer
  *
  * Output is cached at the Vercel edge for 1 year — query-param variants
  * are cached independently, so adding/changing params triggers a fresh render
@@ -95,11 +95,11 @@ export default async function handler(req: Request): Promise<Response> {
   const params = new URL(req.url).searchParams;
 
   const title = pickStr(params, "title", "Habibur Rahman", 60);
-  const role = pickStr(params, "role", "Full-Stack Developer", 40);
+  const role = pickStr(params, "role", "AI & Full-Stack Developer", 40);
   const tagline = pickStr(
     params,
     "tagline",
-    "Building AI-native products, SaaS platforms, and high-performance web experiences for ambitious teams worldwide.",
+    "Building AI agents, SaaS platforms, and high-performance web experiences for ambitious teams worldwide.",
     180
   );
   const kicker = pickStr(params, "kicker", "Portfolio · 2026", 30);
@@ -260,9 +260,12 @@ export default async function handler(req: Request): Promise<Response> {
       fonts: fonts.length > 0 ? fonts : undefined,
       headers: {
         // 1-year edge cache. Different query params cache independently.
-        "Cache-Control":
+        // Lowercase key on purpose: ImageResponse spreads these over its own
+        // lowercase defaults, so a "Cache-Control" key would be appended as a
+        // second value instead of replacing it. Content-Type is left to the
+        // default ("image/png") for the same reason.
+        "cache-control":
           "public, max-age=31536000, s-maxage=31536000, immutable, no-transform",
-        "Content-Type": "image/png",
       },
     }
   );

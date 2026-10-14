@@ -3,7 +3,7 @@
  *
  * Priority order for language resolution:
  *   1. localStorage (previously saved user preference)
- *   2. IP-based geolocation  → ipapi.co/json (free, no key required)
+ *   2. IP-based geolocation  → /api/geo (Vercel edge country header, same-origin)
  *   3. Browser navigator.language
  *   4. Default: English
  *
@@ -172,8 +172,8 @@
     setMeta("name", "title", t.meta.title);
     setMeta("property", "og:title", t.meta.title);
     setMeta("property", "og:description", t.meta.description);
-    setMeta("property", "twitter:title", t.meta.title);
-    setMeta("property", "twitter:description", t.meta.description);
+    setMeta("name", "twitter:title", t.meta.title);
+    setMeta("name", "twitter:description", t.meta.description);
 
     /* data-i18n → textContent */
     document.querySelectorAll("[data-i18n]").forEach((el) => {
@@ -297,7 +297,7 @@
     try {
       const ctrl = new AbortController();
       const timer = setTimeout(() => ctrl.abort(), 3500);
-      const res = await fetch("https://ipapi.co/json/", {
+      const res = await fetch("/api/geo", {
         signal: ctrl.signal,
       });
       clearTimeout(timer);

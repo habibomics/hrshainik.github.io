@@ -1,41 +1,69 @@
-# Habibur Rahman — Full-Stack Developer Portfolio
+# Habibur Rahman — AI & Full-Stack Developer Portfolio
 
-> Product-driven full-stack developer based in Dhaka, Bangladesh.
-> Specializing in Next.js, React, and TypeScript.
+> Product-driven AI & full-stack developer based in Dhaka, Bangladesh.
+> Building AI agents (LangGraph, LangChain, Agno, MCP, RAG) and the full-stack products around them.
+> Specializing in Next.js, React, TypeScript, and Python.
 > Building scalable web applications, SaaS platforms, and e-commerce solutions for international clients.
 
 ## About
 
-Habibur Rahman is a full-stack developer and the Founder & CEO of BioFidelicX
-(https://biofidex.com), an educational platform focused on bioscience education.
+Habibur Rahman is an AI & full-stack developer, a Senior Software Developer at
+Pentamart (https://pentamart.com.bd), the Founder & CEO of Qubetix (https://qubetix.co),
+a digital studio, and the Founder & CEO of biofideX (https://biofidex.com), an
+educational platform focused on bioscience education.
 He transitioned from Biochemistry & Molecular Biology (BSc, Jagannath University)
 to software development, bringing analytical precision to frontend engineering and
 user experience design.
 
-He works with international clients via Upwork and direct engagements, delivering
+He works with international clients via Qubetix, Upwork, and direct engagements, delivering
 production-ready web applications trusted in real-world environments.
+
+His work increasingly centers on agentic AI: stateful agent workflows with LangGraph,
+LangChain, and Agno, tool calling and MCP integrations, and retrieval systems that ground
+answers in real data — built into complete products with APIs, dashboards, permissions,
+and deployment rather than proof-of-concept chatbots.
+
+## Experience
+
+- **Senior Software Developer · Pentamart** (2026 — Present) — Full-stack features for a
+  nationwide multi-vendor e-commerce marketplace in Bangladesh.
+- **Founder & CEO · Qubetix** (2026 — Present) — Digital studio building brand systems,
+  web platforms, and AI-native products.
+- **AI & Full-Stack Developer · Upwork** (2023 — Present) — AI agents, SaaS, e-commerce,
+  and web applications for international clients.
+- **Founder & CEO · biofideX** (2019 — Present) — Bioscience education platform.
 
 ## Services
 
-- **Website Design & Development** — Modern, fast, responsive websites for businesses,
-  landing pages, and portfolios. SEO-ready layouts and performance-focused frontend.
-- **Web App & Dashboard Development** — SaaS tools, admin panels, dashboards, and full-stack
-  applications using Next.js and React.
-- **UI/UX Improvement & Optimization** — UI redesigns, accessibility fixes, mobile responsiveness,
-  frontend refactoring, and performance optimization for existing products.
+- **AI Agents & AI-Native Products** — LangGraph and multi-agent workflows, tool calling
+  and MCP integrations, RAG with hybrid search and grounded answers, approvals, guardrails,
+  and streaming UIs.
+- **SaaS Platforms & Web Apps** — Multi-tenant SaaS architecture, auth, billing and
+  subscriptions, real-time dashboards and analytics, and type-safe end-to-end stacks.
+- **High-Performance Web Experiences** — Conversion-focused landing pages, motion design and
+  micro-interactions, Core Web Vitals and technical SEO, accessibility and inclusive UX.
 
 ## Tech Stack
 
+- **AI & Agents**: LangGraph, LangChain, Agno, MCP, RAG & vector search, OpenAI, Claude, Gemini
 - **Frontend**: Next.js 16, React 19, TypeScript, Tailwind CSS v4, Framer Motion, Shadcn/ui, Radix UI
 - **State**: Redux Toolkit, Zustand, React Query, Context API
-- **Backend & Database**: Supabase, Firebase, PostgreSQL, Prisma ORM, REST APIs
+- **Backend**: Python, FastAPI, Django, Node.js, REST APIs
+- **Database**: Supabase, Firebase, PostgreSQL, Prisma ORM, Redis
 - **Auth & Payments**: Stripe, NextAuth.js, Supabase Auth, OAuth
-- **Deployment**: Vercel, Cloudflare, GitHub Actions
+- **Deployment**: Vercel, Cloudflare, Docker, GitHub Actions
 
 ## Featured Projects
 
-- [BioFidelicX](https://biofidex.com) — Bioscience education platform with quizzes, articles,
+- [biofideX](https://biofidex.com) — Bioscience education platform with quizzes, articles,
   and courses. Built with Next.js, TypeScript, and Supabase. Founded 2019.
+- [Prottoy](https://www.prottoy.app/) — Offline-first academic quiz app for HSC and
+  admission-test students in Bangladesh, on iOS, Android, and web. Built with Flutter,
+  Supabase, and Next.js.
+- [Pentamart](https://pentamart.com.bd) — Nationwide multi-vendor e-commerce marketplace for
+  Bangladesh with verified vendors, cash on delivery, and seller onboarding. Built with Next.js.
+- [Amar Daktar](https://www.amardaktar.online/) — Online doctor consultation service for Bangladesh:
+  video, phone, or in-person visits with BMDC-registered physicians. Built with Next.js.
 - [Al-Bayt Elegance](https://www.thealbayt.com) — E-commerce platform for Islamic fashion
   with secure payments and real-time inventory. Built with React, Firebase, and Stripe.
 - [Noor Jabal Cleaning](https://noorjabalcleaning.com/) — Professional service website for a
@@ -45,7 +73,7 @@ production-ready web applications trusted in real-world environments.
 
 - **Email**: hrsshainik@gmail.com
 - **Portfolio**: https://hrshainik.vercel.app
-- **GitHub**: https://github.com/hrshainik
+- **GitHub**: https://github.com/habibomics
 - **LinkedIn**: https://www.linkedin.com/in/hrshainik
 - **Upwork**: https://www.upwork.com/freelancers/~018853a57064b0cb97
 - **Twitter/X**: https://twitter.com/traveloperhabib
